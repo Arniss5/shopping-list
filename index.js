@@ -20,13 +20,13 @@ addButtonEl.addEventListener("click", function() {
     
     clearInputFieldEl()
 
-    appendItemToShoppingListEl()
+    appendItemToShoppingListEl(inputValue)
 })
 
 function clearInputFieldEl() {
     inputFieldEl.value = ""
 }
 
-function appendItemToShoppingListEl() {
-    shoppingListEl.innerHTML += `<li>${inputValue}</li>`
+function appendItemToShoppingListEl(itemValue) {
+    shoppingListEl.innerHTML += `<li>${itemValue}</li>`
 }
